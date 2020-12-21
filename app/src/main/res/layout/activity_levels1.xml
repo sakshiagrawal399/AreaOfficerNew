@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".dashboard.DashboardActivity">
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        android:layout_height="wrap_content">
+
+    </ProgressBar>
+
+    <include
+        android:id="@+id/tool"
+        layout="@layout/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <include
+        android:id="@+id/location_header"
+        layout="@layout/location_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tool" />
+
+    <LinearLayout
+        android:id="@+id/location"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/location_header"
+        android:visibility="gone"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_margin="10dp"
+            android:background="@drawable/my_custom_background"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/select_state"
+                android:layout_width="match_parent"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:gravity="center_vertical"
+                android:hint="Select State"
+                android:layout_height="45dp">
+
+            </TextView>
+
+
+        </LinearLayout>
+
+        <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+            android:id="@+id/spDistrict"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:hint="@string/select_district"
+
+            android:textColorHint="#05ab9a"
+            android:textSize="16sp"
+            app:met_floatingLabel="normal" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_margin="10dp"
+            android:visibility="gone"
+            android:background="@drawable/my_custom_background"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/select_district"
+                android:layout_width="match_parent"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:gravity="center_vertical"
+                android:hint="Select District"
+                android:layout_height="45dp">
+
+            </TextView>
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+        <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+            android:id="@+id/spBlock"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:hint="@string/select_block"
+            android:visibility="gone"
+            android:textColorHint="#05ab9a"
+            android:textSize="16sp"
+            app:met_floatingLabel="normal" />
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_margin="10dp"
+            android:visibility="gone"
+            android:background="@drawable/my_custom_background"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:gravity="center_vertical"
+                android:hint="Select Block"
+                android:layout_height="45dp">
+
+            </TextView>
+
+
+        </LinearLayout>
+
+
+        <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+            android:id="@+id/spPanchayat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:hint="@string/select_panchayat"
+            android:visibility="gone"
+            android:textColorHint="#05ab9a"
+            android:textSize="16sp"
+            app:met_floatingLabel="normal" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_margin="10dp"
+            android:visibility="gone"
+            android:background="@drawable/my_custom_background"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:gravity="center_vertical"
+                android:hint="Select Panchayat"
+                android:layout_height="45dp">
+
+            </TextView>
+
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/buttonUpload"
+        android:layout_below="@+id/location"
+        android:scrollbars="vertical"></android.support.v7.widget.RecyclerView>
+
+    <Button
+        android:id="@+id/buttonUpload"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:background="@color/colorAccent"
+        android:visibility="invisible"
+        android:text="@string/upload"
+        android:textAllCaps="false"
+        android:textColor="@color/white" />
+
+
+</RelativeLayout>

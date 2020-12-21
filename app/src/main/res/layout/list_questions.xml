@@ -1,0 +1,654 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/Cv1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tool"
+        android:layout_margin="3dp"
+        android:innerRadius="0dp"
+        android:scaleType="fitXY"
+        android:shape="ring"
+        android:thicknessRatio="1.9"
+        app:cardCornerRadius="2dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/image1"
+                android:text="question"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:id="@+id/radioGroup1"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radioButtonYes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:buttonTint="@color/black"
+                    android:text="@string/yes"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+
+                <RadioButton
+                    android:id="@+id/radioButtonNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:buttonTint="@color/black"
+                    android:text="@string/no"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+
+                <RadioButton
+                    android:id="@+id/rg1_notaware"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:buttonTint="@color/black"
+                    android:text="@string/not_aware"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+
+
+
+            </RadioGroup>
+
+            <RadioGroup
+                android:id="@+id/radioGroup2"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radioButtonSufficient"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:buttonTint="@color/black"
+                    android:text="@string/sufficient"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+
+                <RadioButton
+                    android:id="@+id/radioButtonNoSufficient"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:buttonTint="@color/black"
+                    android:text="@string/not_sufficient"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+                <RadioButton
+                    android:id="@+id/rg2_notaware"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:buttonTint="@color/black"
+                    android:text="@string/not_aware"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+
+
+
+            </RadioGroup>
+
+            <RadioGroup
+                android:id="@+id/radioGroup3"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radioButtonResi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:buttonTint="@color/black"
+                    android:text="@string/residential"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+
+                <RadioButton
+                    android:id="@+id/radioButtonNoResi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:buttonTint="@color/black"
+                    android:text="@string/non_residential"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+                <RadioButton
+                    android:id="@+id/rg3_notaware"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:buttonTint="@color/black"
+                    android:text="@string/not_aware"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+
+
+
+            </RadioGroup>
+
+            <RadioGroup
+                android:id="@+id/radioGroup4"
+                android:visibility="visible"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/radioButtonMonthly"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:buttonTint="@color/black"
+                    android:text="@string/monthly"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+
+                <RadioButton
+                    android:id="@+id/radioButtonQuarterly"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:buttonTint="@color/black"
+                    android:text="@string/quarterly"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+
+                <RadioButton
+                    android:id="@+id/radioButtonHalfYearly"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:buttonTint="@color/black"
+                    android:text="@string/half_yearly"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+
+                <RadioButton
+                    android:id="@+id/radioButtonYearly"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:buttonTint="@color/black"
+                    android:text="@string/yearly"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+                <RadioButton
+                    android:id="@+id/rg4_notaware"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:buttonTint="@color/black"
+                    android:text="@string/not_aware"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+
+
+
+            </RadioGroup>
+
+            <RadioGroup
+                android:id="@+id/radioGroup5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/radioButtonImpNeed"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:buttonTint="@color/black"
+                    android:text="@string/improvement_needed"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+
+                <RadioButton
+                    android:id="@+id/radioButtonSatis"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:buttonTint="@color/black"
+                    android:text="@string/satisfactory"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+
+                <RadioButton
+                    android:id="@+id/radioButtonGood"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:buttonTint="@color/black"
+                    android:text="@string/good"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+
+                <RadioButton
+                    android:id="@+id/radioButtonExce"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:buttonTint="@color/black"
+                    android:text="@string/excellent"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+                <RadioButton
+                    android:id="@+id/rg5_notaware"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:buttonTint="@color/black"
+                    android:text="@string/not_aware"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+
+
+
+            </RadioGroup>
+
+            <RadioGroup
+                android:id="@+id/radioGroup6"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/satisfactory"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:buttonTint="@color/black"
+                    android:text="@string/satisfactory"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+
+                <RadioButton
+                    android:id="@+id/unsatisfactory"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:buttonTint="@color/black"
+                    android:text="@string/unsatisfactoey"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+
+                <RadioButton
+                    android:id="@+id/rg6_notaware"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:buttonTint="@color/black"
+                    android:text="@string/notaware"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+
+
+
+            </RadioGroup>
+
+            <RadioGroup
+                android:id="@+id/radioGroup7"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/satisfactory1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:buttonTint="@color/black"
+                    android:text="@string/satisfactory"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+
+                <RadioButton
+                    android:id="@+id/unsatisfactory1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:buttonTint="@color/black"
+                    android:text="@string/unsatisfactoey"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+
+                <RadioButton
+                    android:id="@+id/rg7_notaware"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:buttonTint="@color/black"
+                    android:text="@string/not_aware"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+
+
+
+            </RadioGroup>
+
+
+            <RadioGroup
+                android:id="@+id/radioGroup8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:visibility="visible"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/satisfactory2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:buttonTint="@color/black"
+                    android:text="@string/satisfactory"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+
+                <RadioButton
+                    android:id="@+id/unsatisfactory2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:buttonTint="@color/black"
+                    android:text="@string/unsatisfactoey"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+
+                <RadioButton
+                    android:id="@+id/not_participated"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:buttonTint="@color/black"
+                    android:text="@string/notparticipated"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+
+                <RadioButton
+                    android:id="@+id/rg8_notaware"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:buttonTint="@color/black"
+                    android:text="@string/not_aware"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+
+
+
+            </RadioGroup>
+
+            <RadioGroup
+                android:id="@+id/radioGroup9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/satisfactory3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:buttonTint="@color/black"
+                    android:text="@string/satisfactory"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+
+                <RadioButton
+                    android:id="@+id/unsatisfactory3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:buttonTint="@color/black"
+                    android:text="@string/unsatisfactoey"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+
+                <RadioButton
+                    android:id="@+id/not_paid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:buttonTint="@color/black"
+                    android:text="@string/notpaid"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+
+                <RadioButton
+                    android:id="@+id/rg9_notaware"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:buttonTint="@color/black"
+                    android:text="@string/not_aware"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+
+
+
+            </RadioGroup>
+
+
+
+
+
+            <RadioGroup
+                android:id="@+id/radioGroup10"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/yesrg10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:buttonTint="@color/black"
+                    android:text="@string/yes"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+
+                <RadioButton
+                    android:id="@+id/norg10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:buttonTint="@color/black"
+                    android:text="@string/no"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+
+                <RadioButton
+                    android:id="@+id/incompleterg10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:buttonTint="@color/black"
+                    android:text="@string/incomplete"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+
+
+
+            </RadioGroup>
+
+
+
+            <RadioGroup
+                android:id="@+id/radioGroup11"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/yesrg11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:buttonTint="@color/black"
+                    android:text="@string/yes"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+
+                <RadioButton
+                    android:id="@+id/norg11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:buttonTint="@color/black"
+                    android:text="@string/no"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+
+                <RadioButton
+                    android:id="@+id/notapplicablerg11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:buttonTint="@color/black"
+                    android:text="@string/notapplicable"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+
+
+
+            </RadioGroup>
+
+
+            <RadioGroup
+                android:id="@+id/radioGroup12"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/yesrg12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:buttonTint="@color/black"
+                    android:text="@string/yes"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+
+                <RadioButton
+                    android:id="@+id/norg12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:buttonTint="@color/black"
+                    android:text="@string/no"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+
+                <RadioButton
+                    android:id="@+id/partialrg12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:buttonTint="@color/black"
+                    android:text="@string/partial"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+
+
+
+            </RadioGroup>
+
+
+
+
+            <EditText
+                android:id="@+id/editText"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:maxLength="200"
+                android:inputType="textEmailAddress"
+                android:background="@drawable/shadow_background"
+                android:paddingLeft="5dp"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/editTextNumeric"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:maxLength="5"
+
+                android:inputType="number"
+                android:background="@drawable/shadow_background"
+                android:paddingLeft="5dp"
+                android:textColor="@color/black" />
+
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/linearLayout2"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:paddingRight="5dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/no_image" />
+
+            <EditText
+                android:id="@+id/editTextDate"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+
+                android:background="@drawable/shadow_background"
+                android:drawableRight="@drawable/date_icon"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:inputType="none"
+                android:paddingLeft="5dp"
+                android:textColor="@color/black" />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

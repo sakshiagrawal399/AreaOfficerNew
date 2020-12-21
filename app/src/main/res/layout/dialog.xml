@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:orientation="vertical"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        >
+
+        <Button
+            android:id="@+id/cancel"
+            android:layout_width="70dp"
+            android:text="Cancel"
+            android:textSize="10sp"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/colorPrimary"
+            android:layout_height="40dp">
+
+        </Button>
+
+        <Button
+            android:id="@+id/ok"
+            android:layout_width="60dp"
+            android:text="Ok"
+            android:layout_alignParentRight="true"
+            android:textSize="10sp"
+            android:layout_gravity="right"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/colorPrimary"
+            android:layout_height="40dp">
+
+        </Button>
+
+    </RelativeLayout>
+
+
+
+
+    <android.support.v7.widget.RecyclerView
+
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"
+        android:id="@+id/recyclerViewss"
+        tools:context="example.javatpoint.com.recyclerviewlist.MainActivity">
+
+    </android.support.v7.widget.RecyclerView>
+
+
+</LinearLayout>

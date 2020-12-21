@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.nic.areaofficer.demo1.OuestionActivity1">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+        <include
+            android:id="@+id/tool"
+            layout="@layout/header" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:layout_height="100dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:textStyle="bold"
+                            android:padding="5dp"
+                            android:textColor="@color/color_black"
+                            android:text="1-What are the major unresolved technical problems of the stackholders for collection and uploading of data of the District visited"
+                            android:layout_height="wrap_content" />
+
+
+                        <EditText
+                            android:id="@+id/one"
+                            android:layout_width="match_parent"
+                            android:layout_marginLeft="15dp"
+                            android:paddingLeft="5dp"
+                            android:layout_marginRight="15dp"
+                            android:background="@drawable/shadow_background"
+                            android:layout_height="40dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:layout_marginTop="10dp"
+                        android:layout_height="100dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:textStyle="bold"
+                            android:padding="5dp"
+                            android:textColor="@color/color_black"
+                            android:text="2-Whether all the Departments concerned have appointed frontline workers in the Satte (for Peoples Plan Campaign and Mission Antodaya Survey, 2019"
+                            android:layout_height="wrap_content" />
+
+                        <RadioGroup
+                            android:id="@+id/radio_group_one"
+                            android:layout_width="match_parent"
+                            android:orientation="horizontal"
+                            android:layout_height="match_parent">
+
+                            <RadioButton
+                                android:id="@+id/three_radio1"
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:text="Yes"
+                                android:layout_height="match_parent" />
+
+
+                            <RadioButton
+                                android:id="@+id/three_radio2"
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:text="No"
+                                android:layout_height="match_parent" />
+
+
+                            <RadioButton
+                                android:id="@+id/three_radio3"
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:text="Not Aware"
+                                android:layout_height="match_parent" />
+
+
+                        </RadioGroup>
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:layout_marginTop="10dp"
+                        android:layout_height="100dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:textStyle="bold"
+                            android:padding="5dp"
+                            android:textColor="@color/color_black"
+                            android:text="3-Number of district Resource Person (DRP) appointed in District Visited"
+                            android:layout_height="wrap_content" />
+
+
+                        <EditText
+                            android:id="@+id/two"
+                            android:layout_width="match_parent"
+                            android:layout_marginLeft="15dp"
+                            android:paddingLeft="5dp"
+                            android:inputType="number"
+                            android:layout_marginRight="15dp"
+                            android:background="@drawable/shadow_background"
+                            android:layout_height="40dp" />
+                    </LinearLayout>
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:layout_marginTop="10dp"
+                        android:layout_height="100dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:textStyle="bold"
+                            android:padding="5dp"
+                            android:textColor="@color/color_black"
+                            android:text="4-Number of District Resource Person (DRP) trained in the District visited"
+                            android:layout_height="wrap_content" />
+
+
+                        <EditText
+                            android:id="@+id/five"
+                            android:layout_width="match_parent"
+                            android:layout_marginLeft="15dp"
+                            android:paddingLeft="5dp"
+                            android:inputType="number"
+                            android:layout_marginRight="15dp"
+                            android:background="@drawable/shadow_background"
+                            android:layout_height="40dp" />
+                    </LinearLayout>
+
+
+
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:layout_marginTop="10dp"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:textStyle="bold"
+                            android:padding="5dp"
+                            android:textColor="@color/color_black"
+                            android:text="5-Upload Photo"
+                            android:layout_height="wrap_content" />
+
+
+                        <ImageView
+                            android:id="@+id/image"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_below="@+id/linearLayout2"
+                            android:layout_marginTop="10dp"
+                            android:layout_weight="1"
+                            android:paddingRight="5dp"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/no_image" />
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:layout_marginTop="10dp"
+                        android:layout_height="wrap_content">
+
+
+
+                        <Button
+                            android:id="@+id/save"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_below="@+id/linearLayout2"
+                            android:layout_marginTop="10dp"
+                            android:background="@color/colorAccent"
+                            android:layout_weight="1"
+                            android:textColor="@color/white"
+                            android:text="save"
+                            android:layout_margin="10dp"
+                            android:paddingRight="5dp"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/no_image" />
+
+                        <Button
+                            android:id="@+id/update"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_below="@+id/linearLayout2"
+                            android:layout_marginTop="10dp"
+                            android:background="@color/colorAccent"
+                            android:layout_weight="1"
+                            android:textColor="@color/white"
+                            android:text="update"
+                            android:layout_margin="10dp"
+                            android:paddingRight="5dp"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/no_image" />
+
+
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+
+
+
+
+
+
+
+            </ScrollView>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
